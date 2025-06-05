@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Adventure Quest</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="game-container">
+    <h1>🌟 Adventure Quest</h1>
+    <p>You find yourself at a crossroads in a magical land...</p>
+
+    <div class="body-overlay"></div>
+
+    <img src="scene.jpg" alt="Scene" id="sceneImage" class="game-image" />
+  
+    <p>Will you venture into the mysterious forest 🌲 or visit the peaceful village 🏘️?</p>
+
+    <div class="choices">
+      <button class="btn" onclick="goToForest()">🌲 Enter Forest</button>
+      <button class="btn" onclick="goToVillage()">🏘️ Visit Village</button>
+    </div>
+
+    <button class="click-me" onclick="showHint()">Need a hint?</button>
+
+    <!-- Forest Story Block -->
+    <div id="forestStory" class="story" style="display: none;">
+      <h2>🌲 The Whispering Woods</h2>
+      <p>The forest grows darker as you walk deeper. Strange sounds echo between the trees.</p>
+      <p>You see glowing eyes in the distance... Do you approach or run back?</p>
+    </div>
+
+    <!-- Village Story Block -->
+    <div id="villageStory" class="story" style="display: none;">
+      <h2>🏘️ The Hidden Village</h2>
+      <p>The village is calm and welcoming. People invite you to a feast.</p>
+      <p>A child tells you of a treasure hidden in the well...</p>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 Harshitha's Web Labs</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
