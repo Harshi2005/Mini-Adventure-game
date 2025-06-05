@@ -1,0 +1,113 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /*background: linear-gradient(to bottom right,#ccdeef ); /* Gradient colors */
+    background: linear-gradient(to bottom right, #e8f0fe, #d0e1f9); /* light blue box */
+
+    margin: 0;
+    padding: 150px;
+  }
+/*#e8f0fe, #d0e1f9*/
+.game-container {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  background-color: white;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  transition: min-height 0.3s ease;
+
+  min-height: 700px; /* Adjust height as needed */
+}
+
+h1 {
+  color: #4a90e2;
+  font-size: 3em; /* ← Increased from default */
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/*h1 {
+  color: #4a90e2;
+  font-weight: 100px;
+}*/
+
+p {
+  color: #333;
+  line-height: 1.6;
+  font-size: 1.8em;
+}
+
+.game-image {
+  width: 100%;
+  border-radius: 10px;
+  margin: 20px 0;
+  transition: 0.3s ease-in-out;
+}
+@media (max-width: 600px) {
+  .choices .btn {
+      display: block;
+      width: 100%;
+      margin: 10px 0;
+  }
+
+  .click-me {
+      width: 100%;
+  }
+}
+
+
+.choices {
+  margin: 20px 0;
+}
+
+.btn {
+  font-size: 24px;
+  display: inline-block;
+  padding: 20px 22px;
+  margin: 8px;
+  background-color: #28a745;
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #218838;
+}
+
+.click-me {
+  margin-top: 18px;
+  padding: 20px 28px; /* increased padding for larger box */
+  font-size: 20px;     /* increased font size */
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.click-me:hover {
+  background-color: #0056b3;
+}
+
+footer {
+  margin-top: 40px;
+  font-size: 0.9em;
+  color: #777;
+}
+.story {
+  margin-top: 30px;
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
